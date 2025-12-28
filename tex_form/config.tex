@@ -1,0 +1,46 @@
+\documentclass[
+  12pt,
+  a4paper,
+]{article}
+
+\newcommand{\University}
+{
+  Федеральное государственное автономное\\
+  образовательное учреждение высшего образования\\
+  научно-исследовательский институт чародейства и волшебства\\
+  (<<НИИЧАВО>>)
+}
+\newcommand{\Department}{<<Смысла жизни>>}
+\newcommand{\HeadOfDepartment}{К.Х.~Хунта}
+\newcommand{\Course}{Путешествия по выдуманным мирам}
+\newcommand{\Teacher}{Седловой~Л.~И.}
+\newcommand{\AcademicYear}{2025-2026}
+\newcommand{\DecreeNumber}{01.23-45/6ДСП}
+\newcommand{\DecreeDate}{11.11.2025}
+
+\newcommand{\FileQuestions}{questions.csv}
+\newcommand{\NumberOfQuestions}{3}
+\newcommand{\OneQuestionMark}{10}
+\newcommand{\TwoQuestionMark}{10}
+\newcommand{\ThreeQuestionMark}{10}
+
+\newcommand{\IsPrintTitlePage}{true}
+\newcommand{\IsPrintCropLine}{true}
+\newcommand{\RowHeight}{20}
+
+\usepackage[T2A]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[english, russian]{babel}
+\usepackage{amsmath,amssymb}
+\usepackage{graphicx}
+\usepackage{tabularray}
+\usepackage{makecell}
+\usepackage{tikz}
+\usepackage{array}
+\usepackage{datatool}
+\usepackage{ifthen}
+\usepackage{geometry}
+\geometry{top=1.0cm, bottom=1.0cm, left=1.2cm, right=1.2cm}
+\pagenumbering{gobble}
+
+\DTLloaddb[]{questions}{\FileQuestions}
